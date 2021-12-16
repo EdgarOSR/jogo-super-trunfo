@@ -1,0 +1,64 @@
+body
+{
+    align-content: center;
+    margin-top: 10px;
+}
+
+table
+    {
+        width: 80% !important;
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        margin: auto;
+    }
+
+    td, th
+    {
+        border: 1px solid black;
+        align-content: center;
+    }
+
+    tr
+    {
+        height: 32px;
+    }
+
+    tr.blank-row
+    {
+        height: 12px !important;
+    }
+
+    tbody, tfoot
+    {
+        font-size: medium !important;
+    }
+
+    h1
+    {
+        font-size: xx-large !important;
+    }
+
+    button
+    {
+        height: 32px;
+        width: 160px;
+    }
+
+    img
+    {
+        width: 128px !important;
+        height: 128px !important;
+    }
+
+    img.page-logo
+    {
+        width: 160px !important;
+        height: auto !important;
+    }
+
+    a
+    {
+        height: 32px;
+        width: 160px;
+    }

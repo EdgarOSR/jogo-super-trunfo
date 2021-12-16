@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Super Trunfo Pokémon</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Arquivos Externos -->
+    <script type="text/javascript" src="trunfo-v5.js"></script>
+	<link rel="stylesheet" type="text/css" href="trunfo-v5.css" />
+	<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg">
+</head>
+
+<body class="container bg-black text-light">
+
+    <table class="align-middle text-center">
+        <thead>   
+            <tr>
+                <td>
+                    <img class="page-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="logo-trunfo">
+                </td>
+                <th colspan="2">
+                    <h1 class="text-warning">Super Trunfo Versão 5.0</h1>
+                </th>
+            </tr>
+            <tr class="blank-row"></tr>
+        </thead>
+
+        <tbody>
+			<tr>
+                <td></td>
+				<th>
+					<label>Jogador</label>
+				</th>
+                <th>
+					<label>Máquina</label>
+				</th>
+            </tr>
+            <tr>
+                <td>
+                    <button id="btn-iniciar" class="btn btn-success btn-sm" onclick="iniciarJogo()">Iniciar</button>
+                </td>
+				<th>
+					<label id="placar-jog">0</label>
+				</th>
+				<th>
+					<label id="placar-cpu">0</label>
+				</th>
+			</tr>
+            <tr>
+                <td>
+                    <button id="btn-sortear" class="btn btn-warning btn-sm" onclick="sortearClick()" disabled>Sortear</button>
+                </td>
+                <td colspan="2">
+                    <label id="mensagem-final"></label>
+                </td>
+            </tr>
+
+            <tr class="blank-row"></tr>
+
+            <tr>
+                <td></td>
+                <th>
+                    <label id="nome-carta-jog"></label>
+                </th>
+                <th>
+                    <label id="nome-carta-cpu"></label>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <label id="mensagem-status"></label>
+                </td>
+                <td>
+                    <img id="img-carta-jog" src="https://upload.wikimedia.org/wikipedia/commons/1/11/Blue_question_mark_icon.svg" alt="carta-jogador" class="rounded img-thumbnail">
+                </td>
+                <td>
+                    <img id="img-carta-cpu" src="https://upload.wikimedia.org/wikipedia/commons/1/11/Blue_question_mark_icon.svg" alt="carta-jogador" class="rounded img-thumbnail">
+                </td>
+            </tr>
+
+            <tr id="row-atrib-1" class="">
+				<td>
+					<button id="btn-atrib-1" class="btn btn-primary btn-sm" onclick="compararAtr1()" disabled>Tipo</button>
+				</td>
+				<td>
+					<label id="jog-atrib-1"></label>
+				</td>
+				<td>
+					<label id="cpu-atrib-1"></label>
+				</td>
+			</tr>
+
+            <tr id="row-atrib-2" class="">
+				<td>
+					<button id="btn-atrib-2" class="btn btn-primary btn-sm" onclick="compararAtr2()" disabled>Ataque</button>
+				</td>
+				<td>
+					<label id="jog-atrib-2"></label>
+				</td>
+				<td>
+					<label id="cpu-atrib-2"></label>
+				</td>
+			</tr>
+
+            <tr id="row-atrib-3" class="">
+				<td>
+					<button id="btn-atrib-3" class="btn btn-primary btn-sm" onclick="compararAtr3()" disabled>Defesa</button>
+				</td>
+				<td>
+					<label id="jog-atrib-3"></label>
+				</td>
+				<td>
+					<label id="cpu-atrib-3"></label>
+				</td>
+			</tr>
+
+            <tr id="row-atrib-4" class="">
+				<td>
+					<button id="btn-atrib-4" class="btn btn-primary btn-sm" onclick="compararAtr4()" disabled>Agilidade</button>
+				</td>
+				<td>
+					<label id="jog-atrib-4"></label>
+				</td>
+				<td>
+					<label id="cpu-atrib-4"></label>
+				</td>
+			</tr>
+
+            <tr id="row-atrib-5" class="">
+				<td>
+					<button id="btn-atrib-5" class="btn btn-primary btn-sm" onclick="compararAtr5()" disabled>Vida</button>
+				</td>
+				<td>
+					<label id="jog-atrib-5"></label>
+				</td>
+				<td>
+					<label id="cpu-atrib-5"></label>
+				</td>
+			</tr>
+
+            <tr class="blank-row"></tr>
+
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+				<td>
+					<a class="btn btn-secondary btn-sm" href="trunfo-v5-regras.html" role="button" target="_blank">Regras</a>
+				</td>
+                <th colspan="2">
+                    <span>2021 (C) Edgar Santa Rosa</span>
+                </td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
